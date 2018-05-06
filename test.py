@@ -19,3 +19,4 @@ with tf.Session() as sess:
     sess.run(init)
     print('xwb:', sess.run(xwb))
     print('y:', sess.run(y))
+    print('x:',sess.run(x))
