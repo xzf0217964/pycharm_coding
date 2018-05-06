@@ -13,7 +13,7 @@ x = tf.Variable([[0.4, 0.2, 0.4]])
 w = tf.Variable([[-0.5, -0.2], [-0.3, 0.4], [-0.5, 0.2]])
 b = tf.Variable([[0.1, 0.2]])
 xwb = tf.matmul(x, w) + b
-y = tf.nn.relu(tf.matmul(x, w) + b)
+y = tf.nn.sigmoid(tf.matmul(x, w) + b)
 with tf.Session() as sess:
     init = tf.global_variables_initializer()
     sess.run(init)
